@@ -122,3 +122,43 @@ console.log(typeof Myname);
 
     sayHello("Matt", "Rodrigues");
 }
+
+//Declarando Classe
+{
+    class book{
+        constructor(title, author, pages){
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+        }
+
+        read(){
+            return `Estou lendo ${this.title}`
+        }
+    }
+
+    class TiBook extends book{
+        constructor(title, author, pages, tecnologhy){
+            super(title, author, pages);
+            this.tecnologhy = tecnologhy;
+        }
+    }
+
+    class Pessoa{
+        constructor(name){
+            this.Name = name;
+        }
+
+        get name(){
+            return this.Name;
+        }
+
+        set name(value){
+            this.Name = value;
+        }
+    }
+
+    let livro = new book('Algoritimos', 'Brian', 500);
+    //console.log(livro);
+    console.log(livro.read());
+}
