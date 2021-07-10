@@ -39,3 +39,86 @@ function Sum(a, b){
 
 //O operador Typeof retorna o tipo da variável
 console.log(typeof Myname);
+
+
+//Declarando Condicionais
+//declarando If.
+{
+{
+    let a = 23;
+    if (a > 23){
+        console.log("é maior");
+    }else if(a == 23){
+        console.log("é igual");
+    }else{
+        console.log("é menor");
+    }
+}
+
+//declarando switch/case
+{
+    let a = 15;
+    switch(a){
+        case 0:
+            console.log("é zero");
+            break;
+        case 10:
+            console.log("é 10");
+            break;
+        case 20:
+            console.log("é 20");
+            break;
+        
+        default:
+            console.log("é " + a);
+            break;
+    }
+}
+}
+
+
+//Declarando estruturas de repetição
+{
+
+     let colors = ["black", "red", "blue", "gray", "green"];
+    {
+        for (let i = 0; i < colors.length; i++){
+            console.log(colors[i]);
+        }
+    }
+
+    {
+        let j = 0;
+        while(j < colors.length){
+            console.log(colors[j]);
+            j++;
+
+        }
+    }
+
+    {
+        let k = 0;
+        do{
+            console.log(colors[k]);
+            k++;
+        } while(k < colors.length);
+    }
+
+
+}
+
+
+//Declarando Functions
+{
+    function sum(a, b){
+        return a + b;
+    }
+
+    console.log(sum(9, 8));
+
+    function sayHello(name, lastName){
+        console.log("Hello " + name + " " + lastName);
+    }
+
+    sayHello("Matt", "Rodrigues");
+}
