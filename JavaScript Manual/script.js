@@ -173,6 +173,7 @@ console.log(typeof Myname);
 
 //Operador Ternário If..Else
 {
+    let idade = 17;
     idade >= 18 ? "Maior de idade" : "Menor de idade";
     // O caso que é verdadeiro aparece a esquerda do dois pontos e o caso falso aparece a direita.
 }
