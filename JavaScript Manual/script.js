@@ -42,8 +42,8 @@ console.log(typeof Myname);
 
 
 //Declarando Condicionais
-//declarando If.
 {
+    //declarando If.
 {
     let a = 23;
     if (a > 23){
@@ -161,4 +161,12 @@ console.log(typeof Myname);
     let livro = new book('Algoritimos', 'Brian', 500);
     //console.log(livro);
     console.log(livro.read());
+} 
+
+//Usando Interpolação
+{
+    "Matt é";
+    let role = "esforçado"
+
+    console.log(`Matt é ${role}`);
 }
