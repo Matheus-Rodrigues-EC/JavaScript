@@ -180,3 +180,13 @@ console.log(typeof Myname);
     }
     console.log(MIdade())
 }
+
+//Arrow Functions
+{
+    //A expressão que fica após a seta já o retorno da função
+    let soma = (num1, num2) => num1 + num2;
+
+    let sayHello = (name) => `Hello ${name}`;
+    console.log(sayHello('Stef'));
+}
+
