@@ -190,3 +190,92 @@ console.log(typeof Myname);
     console.log(sayHello('Stef'));
 }
 
+//Operador Spread (...) e metodos de iteração
+{
+    //Operador Spread
+    {
+        const alunasGama = ["Stefane", "Andreina", "Sarah"];
+        console.log(alunasGama[2]);
+
+        var alunasXp = [...alunasGama, "Talia"];
+        console.log(alunasXp);
+    }
+    //Métodos de iteração
+    {
+        alunasXp.map(aluna => console.log(aluna))
+    }
+
+    //filter
+    {
+        var numeros = [15,13,22,46,16,84,09];
+
+        numerosImpares = numeros.filter(numero => numero%2 != 0);
+        console.log(numerosImpares);
+    }
+
+    //metodos de ordenação
+    {
+        const numerosCrescente = numeros.sort((a, b) => a-b);
+        console.log(numerosCrescente);
+
+        const numerosDecrescente = numeros.sort((a, b) => b-a);
+        console.log(numerosDecrescente);
+    }
+
+    //reduce  -  É um método que reduz o arra a um resultado de operação matematica
+    {
+        const numbers = [6, 3, 7, 23];
+        const soma =numbers.reduce((ValorAnterior, ValorAtual) => {
+            return ValorAnterior + ValorAtual;
+        }, 0);
+
+        console.log(soma);
+    }
+}
+
+//Objetos Destructuring
+{
+    const pessoa = {
+        nome: "Matt",
+        idade: "23",
+        cidade: "QXD"
+    }
+
+    //notação de ponto
+    console.log(pessoa.nome); //Matt
+
+    //Notação de colchete
+    console.log(pessoa['idade']); //23
+
+    //Como desestruturar objetos
+
+    const {nome, idade, cidade} = pessoa;
+
+    console.log(cidade);
+
+    {
+        const filmes = [
+            {
+                id: 10,
+                titulo: "Círculo de Fogo",
+                descricao: "Robôs versus Monstros alienígenas",
+                duracao: "120 min"
+            },
+            {
+                id: 15,
+                titulo: "Up - Altas Aventuras",
+                descricao: "Animação infantil de aventura e comédia",
+                duracao: "94 min"
+            },
+            {
+                id: 17,
+                titulo: "Tropa de Elite",
+                descricao: "Grupo militar buscando pacificar o Rio de Janeiro",
+                duracao: "136 min"
+            }]
+
+            const [{id, titulo, descricao, duracao}] = filmes;
+
+            filmes.map(filme => console.log(filme.descricao));
+    }
+}
