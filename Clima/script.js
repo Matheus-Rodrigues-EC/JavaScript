@@ -6,7 +6,7 @@ document.querySelector('.busca').addEventListener('submit', async (event) => {
     if(input !== ''){
         showWarning('Carregando... ');
 
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(input)}&appid=78fdc5dcb46af2ea29ed4106c38a2607&units=metric&lang=pt_br`
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(input)}&appid={IdOpenWeather}&units=metric&lang=pt_br`
         
         let results = await fetch(url); //chama a url e espera a resposta para salvar em results
         let json = await results.json(); // chama a função e espera converter em json
